@@ -1,17 +1,16 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Vito Febrian Ananta  
+**NRP**: 5025211224  
+**Judul TA**: IDENTIFIKASI INFLUENCER UNTUK PEMASARAN MEREK DI INSTAGRAM DENGAN MULTIMODAL LEARNING
+**Dosen Pembimbing**: Shintami Chusnul Hidayati, S.Kom., M.Sc., Ph.D. (NPP 1987202012004) 
+**Dosen Ko-pembimbing**: -
 
 ---
 
 ## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](/thumbnail.jpg)](https://youtu.be/znnljj45VMk)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
@@ -20,56 +19,97 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 ## 🛠 Panduan Instalasi & Menjalankan Software  
 
-### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+### Langkah-langkah
 
-### Langkah-langkah  
-1. **Clone Repository**  
+1. **Meminta akses dataset:**
+[Permintaan Akses Dataset](https://its.id/m/AksesDatasetTugasAkhirVito)
+
+2. **Ekstrak dataset**
+
+3. **Clone Repository**  
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   git clone https://github.com/Informatics-ITS/ta-vitoananta3.git
    ```
-2. **Instalasi Dependensi**
+
+4. **Masuk ke Dalam Folder Repositori**
+
+5. **Copy Hasil Ekstrasi Database ke Folder Repositori (yang sudah di clone) ke Dalam Folder Database**
+
+6. **Pastikan Struktur Direktori Seperti Ini:**
+   ```
+   ├── backend\
+   │   └── main.py
+   ├── dataset\
+   │   ├── images\
+   │   ├── json\
+   │   ├── profile_infulencers\
+   │   └── post_34000_sampled_clean_info.txt
+   ├── frontend\
+   │   ├── .gitignore
+   │   ├── components.json
+   │   ├── eslint.config.mjs
+   │   ├── next.config.ts
+   │   ├── package-lock.json
+   │   ├── package.json
+   │   ├── pnpm-lock.yaml
+   │   ├── postcss.config.mjs
+   │   ├── public\
+   │   ├── src\
+   │   │   ├── app\
+   │   │   ├── components\
+   │   │   └── lib\
+   │   └── tsconfig.json
+   ├── implementation\
+   │   └── bab-4\
+   │       └── main-2-engagement.py
+   ├── inti\
+   │   └── model-result\
+   └── requirements.txt
+   ```
+
+8. **Membuat Virutal Environment**
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   python -3.9 -m venv .venv
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+
+9. **Aktivasi Virutal Environment**
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   source .venv/bin/activate
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
 
----
+10. **Instalasi PyTorch CUDA**
+   ```bash
+   pip install install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+   ```
 
-## 📚 Dokumentasi Tambahan
+11. **Instalasi Dependensi**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
+12. **Jalankan Aplikasi Backend**
+   ```bash
+   python backend/main.py
+   ```
 
----
+13. **Jalankan Aplikasi Frontend**
+   ```bash
+   cd frontend/
+   npm install
+   npm run dev
+   ```
+14. **Buka browser dan kunjungi: `http://localhost:8000` (Aplikasi Backend)**
 
-## ✅ Validasi
+15. **Buka browser dan kunjungi: `http://localhost:3000` (Aplikasi Frontend)**
 
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
+16. **Selamat Anda Telah Berhasil Menjalankan Aplikasi**
+
+> Panduan Penggunaan Aplikasi Dapat Dilihat Melalui Demo Video di Atas
 
 ---
 
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+- Penulis: vitoananta3@gmail.com
+- Pembimbing Utama: shintami@its.ac.id
