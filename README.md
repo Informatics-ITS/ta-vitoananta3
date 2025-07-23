@@ -67,42 +67,42 @@
    └── requirements.txt
    ```
 
-8. **Membuat Virutal Environment**
+7. **Membuat Virutal Environment**
    ```bash
    python -3.9 -m venv .venv
    ```
 
-9. **Aktivasi Virutal Environment**
+8. **Aktivasi Virutal Environment**
    ```bash
    source .venv/bin/activate
    ```
 
-10. **Instalasi PyTorch CUDA**
+9. **Instalasi PyTorch CUDA**
    ```bash
    pip install install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```
 
-11. **Instalasi Dependensi**
+10. **Instalasi Dependensi**
    ```bash
    pip install -r requirements.txt
    ```
 
-12. **Jalankan Aplikasi Backend**
+11. **Jalankan Aplikasi Backend**
    ```bash
    python backend/main.py
    ```
 
-13. **Jalankan Aplikasi Frontend**
+12. **Jalankan Aplikasi Frontend**
    ```bash
    cd frontend/
    npm install
    npm run dev
    ```
-14. **Buka browser dan kunjungi: `http://localhost:8000` (Aplikasi Backend)**
+13. **Buka browser dan kunjungi: `http://localhost:8000` (Aplikasi Backend)**
 
-15. **Buka browser dan kunjungi: `http://localhost:3000` (Aplikasi Frontend)**
+14. **Buka browser dan kunjungi: `http://localhost:3000` (Aplikasi Frontend)**
 
-16. **Selamat Anda Telah Berhasil Menjalankan Aplikasi**
+15. **Selamat Anda Telah Berhasil Menjalankan Aplikasi**
 
 > Panduan Penggunaan Aplikasi Dapat Dilihat Melalui Demo Video di Atas
 
